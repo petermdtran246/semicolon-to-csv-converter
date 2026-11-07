@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Data Conversion</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="convert.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Data Converter</h1>
+        </header>
+
+        <main>
+            <h2>Convert Semicolon Separated Record to Comma Separated</h2>
+            <p>This page will replace the ";" delimiters in a record with the "," character.</p>
+            <p>Any record instances with embedded commas will be wrapped with double quotes.</p>
+
+            <!-- Converter Form Section -->
+            <div id="converter-container">
+                <form id="converter-form" class="converter-form">
+                    <div class="input-group">
+                        <label for="inputRecord">Semicolon Separated Value:</label>
+                        <input
+                            type="text"
+                            id="inputRecord"
+                            name="inputRecord"
+                            placeholder="Enter a semicolon-separated record"
+                            required
+                        >
+                    </div>
+
+                    <div class="input-group">
+                        <label for="outputRecord">Comma Separated Value:</label>
+                        <input
+                            type="text"
+                            id="outputRecord"
+                            name="outputRecord"
+                            placeholder="Converted CSV will appear here"
+                            readonly
+                        >
+                    </div>
+                    
+                    <!-- Submit the form to trigger the JavaScript conversion -->
+                    <button type="submit" class="converter-btn">
+                        Convert Data
+                    </button>
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Peter Tran</p>
+        </footer>
+    </body>
+</html>
